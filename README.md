@@ -107,6 +107,20 @@ Abra o arquivo `frontend/Spotify.html` com a extensão **Live Server** do VS Cod
 
 ---
 
+## ⚠️ Observação sobre o Cadastro
+
+A tela de cadastro está funcional em termos de validação (verifica se o nome já existe no banco via rota `/verificar/:nome`), porém **novos usuários não são persistidos no banco de dados**.
+
+Isso é uma limitação intencional seguindo os requisitos do bimestre, que permitem **apenas consultas SELECT**. A funcionalidade de INSERT para salvar novos cadastros será implementada no próximo bimestre.
+
+Para testar o sistema, utilize os usuários já cadastrados no banco:
+
+| Usuário | Senha |
+|---------|-------|
+| admin | 1234 |
+| joao | senha123 |
+| maria | senha456 |
+
 ## 📊 Banco de Dados
 
 - **Tabela `usuarios`**: armazena os usuários do sistema
