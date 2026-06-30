@@ -86,25 +86,6 @@ main {
     letter-spacing: 1px;
 }
 
-/* Botões de música */
-#lista-musicas button {
-    width: 100%;
-    padding: 14px 18px;
-    margin: 8px 0;
-    border-radius: 999px;
-    border: 1px solid transparent;
-    background: linear-gradient(135deg, #1db954 0%, #1cd36a 100%);
-    color: #070707;
-    font-weight: 700;
-    cursor: pointer;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    letter-spacing: 0.8px;
-}
-
-#lista-musicas button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 18px 28px rgba(29, 185, 84, 0.22);
-}
 
 /* Botão logout no header */
 .btn-logout {
