@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Fake - Músicas</title>
+    <link rel="stylesheet" href="css/Musicas.css">
+</head>
+<body>
+
+<header>
+    <h2>Spotify Fake</h2>
+    <nav>
+        <span id="nomeUsuario"></span>
+        <button class="btn-logout" onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<main>
+    <section class="capa-section">
+        <img id="capa" src="jpeg/logo.jpg" alt="Capa da música">
+        <p id="tituloAtual">Nenhuma música tocando</p>
+    </section>
+
+    <section class="container">
+        <h1>🎵 O que você quer ouvir?</h1>
+
+        <select id="selectMusica" onchange="selecionarMusica()">
+            <option value="">-- Escolha uma música --</option>
+        </select>
+
+        <audio id="player" controls></audio>
+
+        <div id="saida"></div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 - Feito por Matheus Dziubate 🔥</p>
+</footer>
+
+<script src="js/Musicas.js"></script>
+</body>
+</html>

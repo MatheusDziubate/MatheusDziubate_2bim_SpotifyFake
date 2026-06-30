@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Fake - Cadastro</title>
+    <link rel="stylesheet" href="css/Spotify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<header>
+    <h2>Spotify Fake</h2>
+</header>
+
+<main>
+    <section class="container">
+        <h1>CADASTRO</h1>
+
+        <!-- Imagem do logo -->
+        <img src="jpeg/logo.jpg" alt="Logo Spotify Fake" class="logo-img">
+
+        <input type="text"     id="InputNome"           placeholder="Nome de usuário">
+        <input type="password" id="InputSenha"          placeholder="Senha">
+        <input type="password" id="InputConfirmarSenha" placeholder="Confirmar senha">
+        <i class="bi bi-eye" id="BotaoVizualizar" onclick="MostrarSenha()"></i>
+
+        <button onclick="funccadastro()">Cadastrar</button>
+
+        <p>Já tem uma conta? <a href="Spotify.html">Logar</a></p>
+
+        <div id="saida"></div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 - Feito por Matheus Dziubate 🔥</p>
+</footer>
+
+<script src="js/Cadastro.js"></script>
+</body>
+</html>
